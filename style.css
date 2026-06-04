@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #1e1e1e;
+    color: white;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#search {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #8b0000;
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+
+tr:nth-child(even) {
+    background: #2a2a2a;
+}
+
+tr:hover {
+    background: #3a3a3a;
+}

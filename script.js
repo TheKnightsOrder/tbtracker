@@ -37,7 +37,7 @@ function render(players) {
 
     players.forEach((player, index) => {
 
-        const rowColor = player.total > 5
+        const rowColor = player.total > 4
             ? "background-color:#006400;"
             : "background-color:#8B0000;";
 

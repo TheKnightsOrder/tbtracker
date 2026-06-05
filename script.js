@@ -37,10 +37,12 @@ function render(players) {
 
     players.forEach((player, index) => {
 
-        const rowClass = player.total > 5 ? "good" : "bad";
+        const rowColor = player.total > 5
+            ? "background-color:#006400;"
+            : "background-color:#8B0000;";
 
         tbody.innerHTML += `
-            <tr class="${rowClass}">
+            <tr style="${rowColor}">
                 <td>${index + 1}</td>
                 <td>${player.name}</td>
                 <td>${player.total}</td>

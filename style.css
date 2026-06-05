@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background: #1e1e1e;
-    color: white;
+    background: #d8c7a0;
+    color: #2b1b0e;
     max-width: 1000px;
     margin: auto;
     padding: 20px;
@@ -31,6 +31,10 @@ h1 {
 table {
     width: 100%;
     border-collapse: collapse;
+    background: rgba(20,20,20,0.85);
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 th {
@@ -46,22 +50,21 @@ td {
 }
 
 tr:nth-child(even) {
-    background: #2a2a2a;
+    background: rgba(255,255,255,0.03);
 }
 
 tr:hover {
-    background: #3a3a3a;
+    background: rgba(255,255,255,0.08);
 }
 
-.player-name {
-    color: white;
-    font-weight: normal;
+.green-dot {
+    color: #00cc00;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-.good {
-    background: rgba(0, 150, 0, 0.35) !important;
-}
-
-.bad {
-    background: rgba(180, 0, 0, 0.35) !important;
+.red-dot {
+    color: #cc0000;
+    font-size: 18px;
+    font-weight: bold;
 }

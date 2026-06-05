@@ -7,6 +7,7 @@ async function loadCSV() {
 
     let players = rows.map(row => {
         const [name, total] = row.split(",");
+
         return {
             name: name.trim(),
             total: parseInt(total)
@@ -37,15 +38,22 @@ function render(players) {
 
     players.forEach((player, index) => {
 
-        const rowColor = player.total > 4
-            ? "background-color:#006400;"
-            : "background-color:#8B0000;";
+        const dotClass =
+            player.total >= 5
+            ? "green-dot"
+            : "red-dot";
 
         tbody.innerHTML += `
-            <tr style="${rowColor}">
+            <tr>
                 <td>${index + 1}</td>
-                <td>${player.name}</td>
-                <td>${player.total}</td>
+                <td>
+                    <span class="${dotClass}">●</span>
+                    ${player.name}
+                </td>
+                <td>
+                    ${player.total}
+                    <span class="${dotClass}">●</span>
+                </td>
             </tr>
         `;
     });

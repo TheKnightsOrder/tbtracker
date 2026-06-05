@@ -9,6 +9,14 @@ body {
 
 h1 {
     text-align: center;
+    color: gold;
+    font-size: 42px;
+    font-weight: bold;
+    text-shadow:
+        0 0 5px #ffd700,
+        0 0 10px #ffd700,
+        0 0 20px #b8860b;
+    margin-bottom: 25px;
 }
 
 #search {
@@ -16,6 +24,8 @@ h1 {
     padding: 10px;
     margin-bottom: 15px;
     font-size: 16px;
+    border-radius: 5px;
+    border: none;
 }
 
 table {
@@ -25,6 +35,7 @@ table {
 
 th {
     background: #8b0000;
+    color: gold;
     padding: 12px;
 }
 
@@ -40,4 +51,17 @@ tr:nth-child(even) {
 
 tr:hover {
     background: #3a3a3a;
+}
+
+.player-name {
+    color: white;
+    font-weight: normal;
+}
+
+.good {
+    background: rgba(0, 150, 0, 0.35) !important;
+}
+
+.bad {
+    background: rgba(180, 0, 0, 0.35) !important;
 }

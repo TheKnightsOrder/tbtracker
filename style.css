@@ -9,13 +9,9 @@ body {
 
 h1 {
     text-align: center;
-    color: gold;
+    color: #000000;
     font-size: 42px;
     font-weight: bold;
-    text-shadow:
-        0 0 5px #ffd700,
-        0 0 10px #ffd700,
-        0 0 20px #b8860b;
     margin-bottom: 25px;
 }
 

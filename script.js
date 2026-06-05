@@ -37,8 +37,10 @@ function render(players) {
 
     players.forEach((player, index) => {
 
+        const rowClass = player.total > 5 ? "good" : "bad";
+
         tbody.innerHTML += `
-            <tr>
+            <tr class="${rowClass}">
                 <td>${index + 1}</td>
                 <td>${player.name}</td>
                 <td>${player.total}</td>
